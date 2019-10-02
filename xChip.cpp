@@ -1,4 +1,4 @@
-#include "xchip.h"
+#include "xChip.h"
 
 using namespace pxt;
 using namespace xChip;
