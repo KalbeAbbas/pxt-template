@@ -17,7 +17,7 @@ uint8_t xChipClass::begin(uint8_t var)
 
 
 // create functions for the .ts file to access
-nampespace xChip
+namespace xChip
 {
   // create pointer object. eg
   xChipClass *xChipPointer = new xChipClass;
