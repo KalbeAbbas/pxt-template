@@ -1,0 +1,24 @@
+{
+    "name": "xChip",
+    "version": "1.0.0",
+    "description": "XinaBox xChip",
+    "authors": [
+        "Luqmaan Baboo"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "xChip.ts",
+        "xChip.cpp",
+        "xChip.h"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "preferredEditor": "tsprj",
+    "installedVersion": "workspace:42c72eb6-3908-4db5-69ed-b881c6945852"
+}
