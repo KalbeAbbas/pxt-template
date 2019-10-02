@@ -1,15 +1,22 @@
-#include "xChip.h"
+#include "xchip.h"
 
 using namespace pxt;
 using namespace xChip;
 
 MicroBitI2C i2c(I2C_SDA0, I2C_SCL0);
 
-bool xChip::begin()
+xChipClass::xChipClass()
 {
-  return true; 
+
 }
 
+uint8_t xChipClass::begin(uint8_t var)
+{
+  return var; 
+}
+
+
+// create functions for the .ts file to access
 nampespace xChip
 {
   // create pointer object. eg
@@ -17,8 +24,8 @@ nampespace xChip
   
   // eg of how to point to class member
   //%
-  bool begin()
+  uint8_t begin(uint8_t var)
   {
-    return xChipPointer->begin();
+    return xChipPointer->begin(var);
   }
 }
