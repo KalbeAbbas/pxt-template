@@ -1,3 +1,3 @@
 basic.forever(function () {
-  showNumber(xChip.begin(9));
+  basic.showNumber(xChip.begin(9));
 })
