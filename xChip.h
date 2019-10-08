@@ -16,12 +16,6 @@ namespace xChip
     xChipClass();
     uint8_t begin(uint8_t var);
     
-    private:
-    bool wireWriteByte(uint8_t val);
-    bool wireWriteDataByte(uint8_t reg, uint8_t val);
-    bool wireWriteDataBlock(uint8_t reg, uint8_t *val, unsigned int len);
-    bool wireReadDataByte(uint8_t reg, uint8_t &val);
-    int wireReadDataBlock(uint8_t reg, uint8_t *val, unsigned int len);
   };
   
 }
