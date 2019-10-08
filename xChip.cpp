@@ -7,8 +7,8 @@ using namespace xChip;
 
 xChipClass::xChipClass()
 {
-  auto sda = LOOKUP_PIN(SDA);
-  auto scl = LOOKUP_PIN(SCL);
+  sda = LOOKUP_PIN(SDA);
+  scl = LOOKUP_PIN(SCL);
 }
 
 uint8_t xChipClass::begin(uint8_t var)
