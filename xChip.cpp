@@ -18,7 +18,7 @@ uint8_t xChipClass::begin(uint8_t var)
   return var; 
 }
 
-bool xSL06::wireWriteByte(uint8_t val)
+bool xChipClass::wireWriteByte(uint8_t val)
 {
     int error;
     error = i2c->write((uint8_t)APDS9960_I2C_ADDR, (const char*)&val, 1);
@@ -28,7 +28,7 @@ bool xSL06::wireWriteByte(uint8_t val)
     return true;
 }
 
-bool xSL06::wireWriteDataByte(uint8_t reg, uint8_t val)
+bool xChipClass::wireWriteDataByte(uint8_t reg, uint8_t val)
 {
     int error;
     uint8_t buf[2];
@@ -41,12 +41,12 @@ bool xSL06::wireWriteDataByte(uint8_t reg, uint8_t val)
     return true;
 }
 
-bool xSL06::wireWriteDataBlock(uint8_t reg, uint8_t *val, unsigned int len)
+bool xChipClass::wireWriteDataBlock(uint8_t reg, uint8_t *val, unsigned int len)
 {
     return true;
 }
 
-bool xSL06::wireReadDataByte(uint8_t reg, uint8_t &val)
+bool xChipClass::wireReadDataByte(uint8_t reg, uint8_t &val)
 {
     int error;
     error = i2c->write((uint8_t)APDS9960_I2C_ADDR, (const char*)&reg, 1, true);
@@ -60,7 +60,7 @@ bool xSL06::wireReadDataByte(uint8_t reg, uint8_t &val)
      return true;
 }
 
-int xSL06::wireReadDataBlock(uint8_t reg, uint8_t *val, unsigned int len)
+int xChipClass::wireReadDataBlock(uint8_t reg, uint8_t *val, unsigned int len)
 {
     unsigned char i = 0;
     int error;
@@ -75,7 +75,7 @@ int xSL06::wireReadDataBlock(uint8_t reg, uint8_t *val, unsigned int len)
     return len;
 }
 
-void xSL06::delay(uint16_t time)
+void xChipClass::delay(uint16_t time)
 {
     //uBit.sleep(time);
 }
