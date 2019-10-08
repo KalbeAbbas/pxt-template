@@ -3,7 +3,7 @@
 
 #include "pxt.h"
 //#include "MicroBitI2C.h"
-
+#include "Pin.h"
 #include "I2C.h"
 
 #ifndef byte
@@ -18,9 +18,12 @@ namespace xChip
     xChipClass();
     uint8_t begin(uint8_t var);
     private:
-    auto sda;
-    auto scl;
-    
+            bool wireWriteByte(uint8_t val);
+            bool wireWriteDataByte(uint8_t reg, uint8_t val);
+            bool wireWriteDataBlock(uint8_t reg, uint8_t *val, unsigned int len);
+            bool wireReadDataByte(uint8_t reg, uint8_t &val);
+            int wireReadDataBlock(uint8_t reg, uint8_t *val, unsigned int len);
+    void delay(uint16_t time);
   };
   
 }
