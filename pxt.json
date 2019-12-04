@@ -11,9 +11,9 @@
     },
     "files": [
         "README.md",
-        "xChip.ts",
         "xChip.h",
-        "xChip.cpp"
+        "xChip.cpp",
+        "xChip.ts"
     ],
     "testFiles": [
         "test.ts"
