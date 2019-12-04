@@ -11,14 +11,10 @@
     },
     "files": [
         "README.md",
-        "xChip.ts",
-        "xChip.cpp",
-        "xChip.h"
+        "xChip.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
-    "public": true,
-    "preferredEditor": "tsprj",
-    "installedVersion": "workspace:42c72eb6-3908-4db5-69ed-b881c6945852"
+    "public": true
 }
