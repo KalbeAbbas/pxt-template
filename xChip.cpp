@@ -22,10 +22,10 @@ bool xChipClass::wireWriteByte(uint8_t val)
  auto scl = LOOKUP_PIN(SCL);
  codal::I2C* i2c = pxt::getI2C(sda, scl);
     int error;
-    error = i2c->write((uint16_t)APDS9960_I2C_ADDR, (uint8_t*)&val, 1);
-    if(error != 0) {
-        return false;
-    } 
+//     error = i2c->write((uint16_t)APDS9960_I2C_ADDR, (uint8_t*)&val, 1);
+//     if(error != 0) {
+//         return false;
+//     } 
     return true;
 }
 
