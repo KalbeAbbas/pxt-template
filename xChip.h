@@ -14,6 +14,6 @@ class myClass
 public:
     myClass();
     int begin(int var);
-    uint8_t readDeviceID(uint8_t deviceAddress, uint8_t deviceIDReg);
+    uint8_t readDeviceID(uint8_t deviceIDReg);
 };
 #endif
