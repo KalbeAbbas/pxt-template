@@ -9,5 +9,12 @@ namespace xChip {
     export function begin(var_: number): number {
         return 1;
     }
+    
+    //%blockId=xChip_readDeviceID
+    //%block="xChip readDeviceID"
+    //%shim=xChip::readDeviceID
+    export function readDeviceID(deviceIDReg: number): number {
+        return 1;
+    }
 }
   
