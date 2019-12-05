@@ -25,9 +25,9 @@ int myClass::begin(int var)
 
 uint8_t myClass::readDeviceID(uint8_t deviceIDReg)
 {
-    // uint8_t id;
-    // wireReadDataByte(deviceIDreg, id);
-    // return id;
+    uint8_t id;
+    wireReadDataByte(deviceIDreg, id);
+    return id;
 }
 
 static bool wireWriteByte(uint8_t val)
