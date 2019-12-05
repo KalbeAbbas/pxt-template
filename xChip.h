@@ -8,7 +8,7 @@
 typedef uint8_t byte;
 #endif
 
-#define addr 0x72
+#define ADDR 0x72
 class myClass
 {
 public:
