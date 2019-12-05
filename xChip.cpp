@@ -20,7 +20,7 @@ int myClass::begin(int var)
 }
 
 uint8_t myClass::readDeviceID(uint8_t deviceIDReg)
-{   
+{
     uint8_t id;
     wireReadDataByte(deviceIDreg, id);
     return id;
@@ -106,6 +106,7 @@ static void delay(uint16_t time)
     sleep_ms(time);
     //uBit.sleep(time);
 }
+
 namespace xChip
 {
 static myClass *ptr = new myClass;
@@ -115,4 +116,10 @@ int begin(int var)
 {
     return ptr->begin(var);
 }
-} 
+
+//%
+uint8_t readDeviceID(uint8_t deviceIDReg)
+{
+    return ptr->readDeviceID(deviceIDReg);
+}
+} // namespace xChip
