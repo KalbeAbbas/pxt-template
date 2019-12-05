@@ -23,7 +23,7 @@ int myClass::begin(int var)
 uint8_t myClass::readDeviceID(uint8_t deviceIDReg)
 {
     uint8_t id;
-    wireReadDataByte(deviceIDreg, id);
+    wireReadDataByte(deviceIDReg, id);
     return id;
 }
 
