@@ -11,9 +11,6 @@ static int wireReadDataBlock(uint8_t reg, uint8_t *val, int len);
 static void delay(uint16_t time);
 
 
-auto sda = LOOKUP_PIN(SDA);
-auto scl = LOOKUP_PIN(SCL);
-codal::I2C *i2c = pxt::getI2C(sda, scl);
 myClass::myClass()
 {
 }
@@ -32,6 +29,9 @@ uint8_t myClass::readDeviceID(uint8_t deviceIDReg)
 
 static bool wireWriteByte(uint8_t val)
 {
+auto sda = LOOKUP_PIN(SDA);
+auto scl = LOOKUP_PIN(SCL);
+codal::I2C *i2c = pxt::getI2C(sda, scl);
     int error;
     error = i2c->write((uint16_t)ADDR, (uint8_t *)&val, 1);
     if (error != 0)
@@ -43,6 +43,9 @@ static bool wireWriteByte(uint8_t val)
 
 static bool wireWriteDataByte(uint8_t reg, uint8_t val)
 {
+    auto sda = LOOKUP_PIN(SDA);
+auto scl = LOOKUP_PIN(SCL);
+codal::I2C *i2c = pxt::getI2C(sda, scl);
     int error;
     uint8_t buf[2];
     buf[0] = (uint8_t)reg;
@@ -62,6 +65,9 @@ static bool wireWriteDataBlock(uint8_t reg, uint8_t *val, int len)
 
 static bool wireReadDataByte(uint8_t reg, uint8_t &val)
 {
+    auto sda = LOOKUP_PIN(SDA);
+auto scl = LOOKUP_PIN(SCL);
+codal::I2C *i2c = pxt::getI2C(sda, scl);
     int error;
     error = i2c->write((uint16_t)ADDR, (uint8_t *)&reg, 1, true);
     if (error != 0)
@@ -78,6 +84,9 @@ static bool wireReadDataByte(uint8_t reg, uint8_t &val)
 
 static int wireReadDataBlock(uint8_t reg, uint8_t *val, int len)
 {
+    auto sda = LOOKUP_PIN(SDA);
+auto scl = LOOKUP_PIN(SCL);
+codal::I2C *i2c = pxt::getI2C(sda, scl);
     unsigned char i = 0;
     int error;
     error = i2c->write((uint16_t)ADDR, (uint8_t *)&reg, 1, true);
