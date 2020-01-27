@@ -127,7 +127,11 @@ uint8_t readDeviceID(uint8_t deviceIDReg)
 //%
 int delay(uint16_t time_ms)
 {
+#ifdef CODAL_I2C
     sleep_ms(time_ms);
+#else
+    uBit.sleep(time_ms);
+#endif
 }
 } // namespace xChip
  
