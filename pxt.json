@@ -7,7 +7,7 @@
     ],
     "license": "MIT",
     "dependencies": {
-        "core": "file:../core"
+        "core": "*"
     },
     "files": [
         "README.md",
