@@ -12,7 +12,6 @@
     "files": [
         "README.md",
         "xChip.h",
-        "xChip.cpp",
         "xChip.ts"
     ],
     "testFiles": [
