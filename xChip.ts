@@ -16,5 +16,12 @@ namespace xChip {
     export function readDeviceID(deviceIDReg: number): number {
         return 1;
     }
+    
+    //%blockId=xChip_delay
+    //%block="xChip delay"
+    //%shim=xChip::delay
+    export function delay(time_ms: number): number{
+        return 1;
+    }
 }
   
