@@ -1,7 +1,14 @@
+#pragma once
+#ifdef CODAL_I2C
+#include "Pin.h"
+#include "I2C.h"
+#endif
+#include "pxt.h"
+#include "inttypes.h"
+
 #ifndef xChip_h
 #define xChip_h
 #include "pxt.h"
-//#include "MicroBitI2C.h"
 #include "Pin.h"
 #include "I2C.h"
 #ifndef byte
