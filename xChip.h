@@ -14,6 +14,6 @@ public:
     myClass();
     int begin(int var);
     uint8_t readDeviceID(uint8_t deviceIDReg);
-    //int delay(uint16_t time_ms);
+    int delay(uint16_t time_ms);
 };
 #endif
