@@ -123,5 +123,11 @@ uint8_t readDeviceID(uint8_t deviceIDReg)
 {
     return ptr->readDeviceID(deviceIDReg);
 }
+    
+//%
+int delay(uint16_t time_ms)
+{
+    sleep_ms(time_ms);
+}
 } // namespace xChip
  
