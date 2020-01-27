@@ -1,7 +1,7 @@
 #ifndef xChip_h
 #define xChip_h
-/*#include "pxt.h"
-#include "Pin.h"
+#include "pxt.h"
+/*#include "Pin.h"
 #include "I2C.h"*/
 #ifndef byte
 //typedef uint8_t byte;
