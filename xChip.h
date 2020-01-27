@@ -11,9 +11,9 @@
 class myClass
 {
 public:
-    myClass();
+    /*myClass();
     int begin(int var);
-    uint8_t readDeviceID(uint8_t deviceIDReg);
+    uint8_t readDeviceID(uint8_t deviceIDReg);*/
     int delay(uint16_t time_ms);
 };
 #endif
