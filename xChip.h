@@ -7,7 +7,7 @@
 //typedef uint8_t byte;
 #endif
 
-/*#define ADDR 0x72
+#define ADDR 0x72
 class myClass
 {
 public:
@@ -15,5 +15,5 @@ public:
     int begin(int var);
     uint8_t readDeviceID(uint8_t deviceIDReg);
     int delay(uint16_t time_ms);
-};*/
+};
 #endif
