@@ -12,8 +12,8 @@
     "files": [
         "README.md",
         "xChip.h",
-        //"xChip.cpp",
         "xChip.ts"
+        //"xChip.cpp",
     ],
     "testFiles": [
         "test.ts"
